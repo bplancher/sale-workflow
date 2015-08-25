@@ -34,7 +34,7 @@ class sale_order(orm.Model):
             readonly=True,
             states={
                 'draft': [('readonly', False)],
-                'sent': [('readonly', True)],
+                'sent': [('readonly', False)],
             },
             track_visibility='onchange'),
     }
